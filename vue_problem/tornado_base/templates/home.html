@@ -8,9 +8,10 @@
         <title>测试</title>
     </head>
     <body>
-    <div id="app">{{ message }}</div>
+    <div id="app">${ message }</div>
     <script>
     var app = new Vue({
+        delimiters: ['${', '}'],
 el: '#app',
 data: {
 message: 'Hello Vue!'
